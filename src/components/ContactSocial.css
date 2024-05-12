@@ -1,0 +1,55 @@
+.contact-social-section {
+    background-color: #fff; /* White background for cleanliness */
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .section-title {
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  .contact-details {
+    margin-bottom: 20px;
+  }
+  
+  .contact-link {
+    color: #0066cc;
+    text-decoration: underline;
+  }
+
+  .contact-link:hover {
+    color: #004499; /* A darker blue on hover for better visibility */
+    text-decoration: none; /* Optional: remove underline on hover */
+  }
+  
+  .social-media-links {
+    font-size: 24px; /* Larger icons for visibility */
+  }
+  
+  .social-link {
+    display: inline-block;
+    margin: 0 10px;
+    color: #333; /* Icon color */
+    transition: color 0.3s ease;
+  }
+  
+  .social-link:hover, .social-link:focus {
+    color: #0066cc; /* Color change on hover for interactivity */
+    text-decoration: none; /* Remove underline from links */
+  }
+
+  .fab {
+    font-size: 24px; /* or size you prefer */
+  }
+  
+  /* Import Font Awesome or similar for icons */
+  /* You can use a service like CDNJS or host the files locally */
+  @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css');
+  

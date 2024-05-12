@@ -1,0 +1,44 @@
+.why-choose-us-section {
+    background-color: #fff; /* White background */
+    padding: 50px 0; /* Spacing above and below the content */
+  }
+  
+  .why-choose-us-container {
+    width: 80%;
+    margin: 0 auto; /* Centers the content */
+  }
+  
+  .why-choose-us-title {
+    text-align: center;
+    color: #333; /* Dark grey color for the title */
+    font-size: 2.5rem; /* Larger font size for the title */
+    margin-bottom: 30px; /* Space below the title */
+  }
+  
+  .values {
+    display: flex;
+    justify-content: space-between; /* Space out the value items evenly */
+  }
+  
+  .value-item {
+    width: 30%; /* Each value item takes up one-third of the container */
+    text-align: center;
+  }
+  
+  .value-icon {
+    font-size: 3rem; /* Larger icons */
+    color: #5cb85c; /* Green color for icons */
+    margin-bottom: 20px; /* Space below the icons */
+  }
+  
+  .value-item h3 {
+    color: #333;
+    font-size: 1.5rem; /* Slightly larger font size for subtitles */
+    margin-bottom: 10px; /* Space below the subtitles */
+  }
+  
+  .value-item p {
+    color: #555;
+    line-height: 1.6;
+  }
+  

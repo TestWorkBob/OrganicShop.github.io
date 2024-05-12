@@ -1,0 +1,114 @@
+.main-page {
+  text-align: center;
+}
+
+.carousel-container {
+  padding: 2rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.slick-slider {
+  width: 80%; /* Reduced to 80% to allow for margins */
+  margin: auto;
+  overflow: hidden;
+}
+
+.slide {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.slide img {
+  max-width: 100%; /* Width limited to the parent size */
+  max-height: 500px; /* Maximum height set */
+  height: auto; /* Height auto for aspect ratio */
+  border-radius: 10px; /* Optional: rounded corners for the images */
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1); /* Optional: shadow for depth */
+  margin: 10px; /* Space around the images */
+}
+
+.slide-text {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  right: 12%; /* Adjust to position the box further to the left */
+  transform: translateY(-50%); /* Center the text block vertically */
+  background-color: rgba(0, 0, 0, 0.6); /* Slightly darker semi-transparent black background */
+  color: white;
+  padding: 1.5rem; /* Increase padding */
+  border-radius: 10px;
+  width: 40%; /* Increase width */
+  max-width: 500px; /* Further increase maximum width */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: all 0.3s ease; /* Smooth transition for any changes */
+  z-index: 2; /* Ensure it's above the image */
+}
+
+.slick-dots {
+  bottom: -25px;
+}
+
+.slick-dots li button:before {
+  color: white;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+  font-size: 24px;
+}
+
+.custom-arrow {
+  background-color: white;
+  color: black;
+  padding: 0.5em;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 25;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.custom-prev-arrow {
+  left: 10px;
+}
+
+.custom-next-arrow {
+  right: 10px;
+}
+
+.custom-arrow:hover {
+  background-color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+  .slick-slider {
+    width: 90%;
+  }
+
+  .slide-text {
+    width: 70%;
+    bottom: 10px;
+    right: 10px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .slick-slider {
+    width: 95%;
+  }
+
+  .slide-text {
+    padding: 8px;
+    font-size: 12px;
+  }
+}

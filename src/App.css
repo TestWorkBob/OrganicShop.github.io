@@ -1,0 +1,70 @@
+
+/* src/App.css */
+.navbar {
+  background-color: #fff; /* or any color that matches your design */
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* optional, for a slight shadow */
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.navbar-logo img {
+  width: auto; /* keeps aspect ratio */
+  height: 80px; /* adjust this to fit the logo in your navbar */
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+  list-style-type: none; /* removes bullet points from list */
+  gap: 20px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.navbar-icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.login-button {
+  background-color: #ffd700;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* Icon size adjustments */
+.fa-search, .fa-shopping-bag {
+  font-size: 1.5em; /* Adjusts the size of icons */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-direction: column;
+  }
+  .navbar-logo img {
+    height: 60px; /* smaller size for mobile */
+  }
+  .navbar-links {
+    justify-content: center;
+    padding: 0;
+  }
+  .navbar-icons {
+    justify-content: center;
+  }
+}

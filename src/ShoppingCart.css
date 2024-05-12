@@ -1,0 +1,262 @@
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .cart-item img {
+    width: 200px; /* Оновлено для відповідності до запиту */
+    height: auto;
+    margin-right: 20px;
+  }
+  
+  .shopping-cart {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Додано тінь для стильного виду */
+    background: #fff; /* Фон для корзини */
+  }
+  
+  .cart-items {
+    margin-bottom: 20px;
+  }
+  
+  .item-details {
+    flex-grow: 1;
+    padding-left: 20px; /* Додано відступ для тексту деталей товару */
+  }
+  
+  .item-details h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+  }
+  
+  .item-details p {
+    margin: 5px 0;
+    color: #555; /* Злегка затемнений колір тексту */
+  }
+  
+  .cart-checkout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+  }
+  
+  .order-summary {
+    flex-basis: 60%;
+    text-align: right; /* Текст суми вирівняний по правому краю */
+  }
+  
+  .customer-info {
+    flex-basis: 35%;
+  }
+  
+  .checkout-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s ease; /* Анімація для кнопки */
+  }
+  
+  .checkout-button:hover {
+    background-color: #45a049; /* Зміна кольору кнопки при наведенні */
+  }
+  
+  .checkout-form input,
+  .checkout-form button {
+    width: 100%; /* Ширина інпутів і кнопки на весь контейнер */
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .checkout-form button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  /* Ви можете додати медіа-запити для респонсивного дизайну */
+  @media (max-width: 768px) {
+    .cart-item,
+    .cart-checkout {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .order-summary,
+    .customer-info {
+      flex-basis: 100%;
+      text-align: left;
+    }
+  
+    .checkout-button {
+      width: auto;
+    }
+  }
+  /* ... ваші попередні стилі ... */
+
+/* Стилі для форми */
+.checkout-form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+  }
+  
+  .checkout-form input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .checkout-form button.confirm-order {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  /* Позиціонування та стилі для кнопки оформлення замовлення */
+  .cart-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+  }
+  
+  .cart-summary .total-sum {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  .cart-summary .checkout-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  /* Style for remove button */
+.remove-item {
+    background: none;
+    color: #007bff;
+    border: none;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  .cart-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+  }
+  
+  .cart-summary .total-sum {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  .checkout-button,
+  .confirm-order {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  .checkout-button:hover,
+  .confirm-order:hover {
+    background-color: #45a049;
+  }
+  
+.quantity-button,
+.remove-item,
+.confirm-order {
+  background-color: #4CAF50;
+  color: white;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 4px;
+  font-size: 1rem;
+}
+
+.quantity-button:hover,
+.remove-item:hover,
+.confirm-order:hover {
+  background-color: #45a049;
+}
+
+.remove-item {
+  background-color: #c7746f;
+}
+
+.remove-item:hover {
+  background-color: #d32f2f;
+}
+
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f9f9f9; /* Light grey background */
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 4px;
+    padding: 4px 8px; /* Padding inside the container */
+    width: 100px; /* Set a fixed width */
+  }
+  
+  .quantity-button {
+    background-color: #fff; /* White background for the buttons */
+    color: #333; /* Darker text for better contrast */
+    border: none;
+    padding: 6px 12px;
+    margin: 0; /* Remove margin */
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    line-height: 1; /* Adjust line height to align with the text better */
+  }
+  
+  .quantity-button:hover {
+    background-color: #4CAF50; /* Green background on hover */
+    color: white; /* White text on hover */
+  }
+  
+  .quantity-button:disabled {
+    background-color: #eee; /* Light grey background for disabled state */
+    color: #aaa; /* Grey text for disabled state */
+    cursor: not-allowed;
+  }
+  
+  .quantity-selector span {
+    padding: 0 12px; /* Padding on the sides of the number */
+  }
+  

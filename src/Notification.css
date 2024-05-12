@@ -1,0 +1,51 @@
+/* Notification.css */
+.notification {
+    position: fixed;
+    top: 20px; /* Расположение сверху экрана */
+    left: 50%; /* Центрирование по горизонтали */
+    transform: translateX(-50%); /* Для точного центрирования */
+    background-color: #4CAF50; /* Цвет фона */
+    color: white; /* Цвет текста */
+    padding: 15px 30px; /* Внутренние отступы */
+    border-radius: 25px; /* Скругление углов */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Тень для объёма */
+    z-index: 1000; /* Чтобы быть над другими элементами */
+    animation: slideIn 0.5s, stay 2.5s, slideOut 0.5s 3s forwards; /* Анимация появления, задержка и исчезновения */
+    display: flex; /* Для центрирования текста по вертикали */
+    align-items: center; /* Вертикальное выравнивание */
+    justify-content: center; /* Горизонтальное выравнивание */
+    font-size: 1rem; /* Размер шрифта */
+}
+
+@keyframes slideIn {
+    from {
+      top: -50px;
+      opacity: 0;
+    }
+    to {
+      top: 20px;
+      opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    from {
+      top: 20px;
+      opacity: 1;
+    }
+    to {
+      top: -50px;
+      opacity: 0;
+    }
+}
+
+@keyframes stay {
+    from {
+      top: 20px;
+      opacity: 1;
+    }
+    to {
+      top: 20px;
+      opacity: 1;
+    }
+}

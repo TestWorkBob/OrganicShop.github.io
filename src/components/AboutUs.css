@@ -1,0 +1,52 @@
+.about-us-section {
+    background-color: #f4f4f4; /* Light grey background */
+    padding: 50px 0; /* Spacing above and below the content */
+  }
+  
+  .about-us-container {
+    width: 80%;
+    margin: 0 auto; /* Centers the content */
+  }
+  
+  .about-us-title {
+    text-align: center;
+    color: #333; /* Dark grey color for the title */
+    font-size: 2.5rem; /* Larger font size for the title */
+    margin-bottom: 20px; /* Space below the title */
+  }
+  
+  .about-us-text {
+    color: #555; /* Medium grey for the text */
+    line-height: 1.6; /* Spacing between lines of text */
+    margin-bottom: 40px; /* Space below the paragraph */
+  }
+  
+  .about-us-highlights {
+    display: flex;
+    justify-content: space-around; /* Space out the highlights evenly */
+    align-items: flex-start;
+  }
+  
+  .highlight {
+    width: 30%; /* Each highlight takes up one-third of the container */
+    text-align: center;
+  }
+  
+  .highlight img {
+    width: 100%;
+    height: auto; /* Keeps the image aspect ratio */
+    border-radius: 8px; /* Slightly rounded corners for the images */
+    margin-bottom: 15px; /* Space below the images */
+  }
+  
+  .highlight h3 {
+    color: #333;
+    font-size: 1.5rem; /* Slightly larger font size for subtitles */
+    margin-bottom: 10px; /* Space below the subtitles */
+  }
+  
+  .highlight p {
+    color: #555;
+    line-height: 1.6;
+  }
+  
